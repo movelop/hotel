@@ -1,0 +1,156 @@
+.testimonials {
+    width: 100%;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonialsContainer {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonialsContainer h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 72px;
+    color: #14274A;
+
+}
+
+.testimonialsText {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonialsText h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #14274A;
+}
+
+.testimonialsText p {
+    margin-top: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #14274A;
+
+}
+
+.testimonialsButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.testimonialsButtons button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #E0B973;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+@media screen and (min-width:2000px) {
+    .testimonials {
+        margin-top: 5rem;
+    }
+    
+    .testimonialsContainer{
+        min-width: 1980px;
+    }
+
+    .testimonialsContainer h1 {
+        font-size: 72px;
+    }
+
+    .testimonialsText {
+        margin-top: 2rem;
+    }
+
+    .testimonialsText h5 {
+        font-size: 40px;
+    }
+
+    .testimonialsText p {
+        font-size: 32px;
+    }
+
+    .testimonialsButtons {
+        gap: 2rem;
+    }
+
+    .testimonialsButtons button {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .testimonialsContainer h1 {
+        font-size: 32px;
+    }
+
+    .testimonialsText h5 {       
+        font-size: 24px;
+    }
+
+    .testimonialsText p {
+        font-size: 18px;
+    
+    }
+
+    .testimonialsButtons button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .testimonialsContainer {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .testimonials {
+        margin: 2rem 0;
+    }
+    .testimonialsContainer h1 {
+        font-size: 28px;
+    }
+
+    .testimonials h5 {       
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .testimonialsText {
+        margin-top: 0;
+        width: 85%;
+    }
+
+    .testimonialsText p {
+        font-size: 14px;
+    }
+
+    .testimonialsButtons button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+

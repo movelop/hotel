@@ -1,0 +1,227 @@
+.navbar {
+    width: 100%;
+    max-width: 1380px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 226px;
+    height: 100%;
+    background-color: #E0B973;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.logoText h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.10em;
+    color: #14274A;
+    text-transform: uppercase;
+}
+
+.logoText h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    color: #14274A;
+    text-transform: uppercase;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navLink span {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.capitalize {
+    text-transform: uppercase ;
+}
+
+.navbarToggle {
+    display: none;
+    position: relative;
+}
+
+.navbarSmall {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: #E0B973;
+    padding: 2rem;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(80, 79, 79, 0.2);
+}
+
+.navbarCancel {
+    font-size: 27px;
+    color: #14274A;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.navbarSmallLinks {  
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navLinkSmall span {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 2rem 0;
+    cursor: pointer;
+    color: #14274A;
+    font-weight: 900;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 2000px) {
+    .navbar {
+        min-width: 1980px;
+        height: 150px;
+    }
+
+    .logo {
+        width: 256px;
+    }
+
+    .logoText h1 {
+        font-size: 38px;
+    }
+
+    .logoText h3 {
+        font-size: 18px;
+    }
+
+    .navLink span {
+        font-size: 28px;
+    }
+    
+}
+
+@media screen and (max-width: 1550px) {
+    .navbar {
+        max-width: 1024px;
+    }
+    .logo {
+        width: 156px;
+        height: 100%;
+    }
+
+    .logoText h1 {  
+        font-size: 22px;
+    }
+    
+    .logoText h3 {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.4em;
+        color: #14274A;
+        text-transform: uppercase;
+    }
+
+    .navLink span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .navbar{
+        height: 60px;
+        max-width: 850px;
+    }
+
+    .logo{
+        width: 100px;
+        height: 60px;
+    }
+
+    .logoText h1 {  
+        font-size: 15px;
+    }
+    
+    .logoText h3 {
+        font-size: 9px;
+    }
+
+    .links{
+        display: none;
+    }
+    
+    .navbarToggle {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .navbar {
+        max-width: 90%;
+    }
+
+    .navbarSmall {
+        top: 25px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .navbar {
+        max-width: 95%;
+        height: 60px;
+    }
+    
+}
+
+@media screen and (max-width: 385px) {
+    .navbarSmall {
+        top: 35px;
+        min-width: 150px;
+        padding: 1rem;
+    }
+
+    .navbarCancel {
+        font-size: 22px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .navbarSmallLinks span {
+        font-size: 16px;
+    }
+}

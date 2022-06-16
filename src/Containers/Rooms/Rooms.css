@@ -1,0 +1,343 @@
+.rooms {
+    display: flex;
+    justify-content: center;
+}
+
+.roomsContainer {
+    width: 100%;
+    max-width: 1380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.room {
+    margin: 3rem;
+    width: 100%;
+    border: 2px solid #14274A;
+    border-radius: 0px 0px 15px 15px;
+    overflow: hidden;
+}
+
+.roomImageContainer {
+    width: 100%;
+    position: relative;
+    height: 700px;
+}
+
+.roomImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(20, 39, 74, 0.2);
+}
+
+.overlayContainer {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: relative;
+}
+
+.selectors {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.selector {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.imageactive {
+    background: #FFFFFF;
+}
+
+.roomName {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background: #14274A;
+}
+
+.roomName h2 {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.roomActions {
+    width: 100%;
+}
+
+.actions {
+    padding: 3rem 6rem;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.viewDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.vDBtn {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.vDBtn span {
+    padding: 5px;
+    background-color: #E0B973;
+    display: flex;
+    font-size: 27px;
+    font-weight: 700;
+    align-items: center;
+    border-radius: 50%;
+    color: #FFFFFF;
+}
+
+.vDBtn p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #14274A;
+}
+
+.roomDetail {
+    margin-top: 1rem;
+    margin-left: 4rem;
+    width: 400px;
+    padding: 10px;
+    background-color: #E0B973;
+    text-align: center;
+    border-radius: 5px;
+    color: #14274A;
+}
+
+.roomDetail p {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.actionButton {
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Montserrat', serif;
+    background-color: #E0B973;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 1rem;
+    border-radius: 5px;
+}
+
+.actionButton span {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.actionButton span svg {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 2000px) {
+    .room {
+        margin-bottom: 2rem;
+    }
+    .roomsContainer {
+        max-width: 1980px;
+    }
+
+    .roomImageContainer {
+        height: 1024px;
+    }
+
+    .selector  {
+        width: 20px;
+        height: 20px;
+    }
+
+    .roomName h2 {
+        font-size: 64px;
+    }
+
+    .actions {
+        padding: 4rem 8rem;
+    }
+
+    .vDBtn span {
+        font-size: 40px;
+    }
+    
+    .vDBtn p {
+        font-size: 32px;
+    }
+
+    .roomDetail {
+        width: 800px;
+    }
+
+    .roomDetail p {
+        font-size: 32px;
+    }
+
+    .actionButton {
+        padding: 2rem 3rem;
+    }
+
+    .actionButton,
+    .actionButton span {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .room {
+        margin-bottom: 2rem;
+    }
+    .roomsContainer {
+        max-width: 1084px;
+    }
+
+    .roomImageContainer {
+        height: 500px;
+    }
+
+    .roomName h2 {
+        font-size: 38px;
+    }
+}  
+
+@media screen and (max-width:1150px) {
+    .roomsContainer {
+        max-width: 850px;
+    }
+
+    .roomName {
+        padding: 1rem 0;
+    }
+
+    .roomName h2 {
+        font-size: 32px;
+    }
+
+    .actions {
+        padding: 2rem 3rem;
+    }
+
+    .actionButton,
+    .actionButton span, 
+    .vDBtn p {
+        font-size: 16px;
+    }
+
+    .vDBtn span {
+        font-size: 22px;
+    }
+
+    .roomDetail {
+        width: 300px;
+    }
+
+    .roomDetail p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .room {
+        margin-bottom: 1rem;
+    }
+    .roomsContainer {
+        max-width: 90%;
+    }
+
+    .roomName h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .roomsContainer {
+        margin-top: 1rem;
+    }
+    .room {
+        margin-bottom: 0;
+        margin-top: 1.5rem;
+    }
+    
+    .roomImageContainer {
+        height: 275px;
+    }
+
+    .roomName {
+        padding: 0.5rem;
+    }
+
+    .roomName h2 {
+        font-size: 24px;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+        align-items: center;
+    }
+
+    .vDBtn span {
+        font-size: 18px;
+    }
+
+    .actionButton,
+    .actionButton span, 
+    .vDBtn p {
+        font-size: 16px;
+    }
+
+    .actionButton {
+        width: 100%;
+    }
+
+    .roomDetail {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .roomDetail p {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,338 @@
+.heading {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    
+}
+
+.headingImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headingOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(20, 39, 74, 0.5);
+    z-index: 999;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headingContainer {
+    width: 100%;
+    max-width: 1380px;
+    margin-top: 8rem;
+}
+
+.headingTexts {
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+    max-width: 480px;
+}
+
+.headingTexts h6 {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.headingTexts h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.headingTexts h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.75rem;
+    letter-spacing: 0.4em;
+    color: #FFFFFF;
+}
+
+.headingTexts p {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.headingButtons {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookNow {
+    padding: 10px 15px;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFFFFF;
+    background-color: #E0B973;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.scroll {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scrollText {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+
+.scrollIcon {
+    color: #FFFFFF;
+    font-size: 45px;
+}
+
+@media screen and (min-width: 2000px) {
+    .headingContainer{
+        min-width: 1980px;
+        margin-top: 10rem;
+    }
+
+    .headingTexts {
+        max-width: 40%;
+    }
+
+    .headingTexts h6 {
+        font-size: 5rem;
+    }
+
+    .headingTexts h2 {
+        font-size: 9rem;
+        letter-spacing: 0.09em;
+    }
+    
+    .headingTexts h4 {
+        font-size: 5rem;
+        letter-spacing: 0.6em;
+    }
+    
+    .headingTexts p {
+        font-size: 2.5rem;
+        letter-spacing: 0.2em;
+    }
+
+    .headingButtons {
+        margin-top: 12rem;
+    }
+    
+    .bookNow {
+        padding: 20px 30px;
+        font-size: 60px;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .scroll {
+        margin-top: 7rem;
+        
+    }
+    
+    .scrollText {  
+        font-size: 48px;
+        margin-bottom: 3rem;
+    }
+    
+    
+    .scrollIcon {
+        font-size: 68px;
+    }
+}
+
+
+@media screen and (max-width: 1550px ){
+    .headingContainer {
+        max-width: 1024px;
+        margin-top: 5rem;
+    }
+
+    .headingTexts h6 {
+        font-size: 1.75rem;
+    }
+
+    .headingTexts h2 {
+        font-size: 3.5rem;
+        letter-spacing: 0.07em;
+    }
+    
+    .headingTexts h4 {
+        font-size: 2.25rem;
+        letter-spacing: 0.2em;
+    }
+    
+    .headingTexts p { 
+        font-size: 1.25rem;
+    }
+
+    .headingButtons {
+        margin-top: 4rem;
+    }
+    
+    .scroll {
+        margin-top: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    .headingContainer {
+        max-width: 850px;
+        margin-top: 3rem;
+    }
+
+    .headingTexts {
+        gap: 1px;
+        max-width: 360px;
+    }
+
+    .headingTexts h6 {
+        font-size: 1.5rem;
+    }
+
+    .headingTexts h2 {
+        font-size: 3rem;
+        letter-spacing: 0.07em;
+    }
+    
+    .headingTexts h4 {
+        font-size: 2rem;
+        letter-spacing: 0.2em;
+    }
+    
+    .headingTexts p { 
+        font-size: 1.1rem;
+    }
+
+    .headingButtons {
+        margin-top: 1.5rem;
+    }
+
+    .bookNow {
+        font-size: 18px;
+    }
+
+    .scroll {
+        margin-top: 1rem;
+    }
+
+    .scrollIcon {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .heading {
+        height: 50vh;
+    }
+    .headingContainer {
+        max-width: 90%;
+        margin-top: 5rem;
+    }
+
+
+    .headingTexts h6 {
+        font-size: 1.75rem;
+    }
+
+    .headingTexts h2 {
+        font-size: 3.5rem;
+        letter-spacing: 0.07em;
+    }
+    
+    .headingTexts h4 {
+        font-size: 2.25rem;
+        letter-spacing: 0.2em;
+    }
+    
+    .headingTexts p { 
+        font-size: 1.25rem;
+    }
+
+    .headingButtons {
+        margin-top: 5rem;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .headingContainer {
+        margin-top: 3rem;
+    }
+
+    .headingTexts {
+        max-width:100%;
+    }
+
+    .headingTexts h6 {
+        font-size: 1.5rem;
+    }
+
+    .headingTexts h2 {
+        font-size: 2.5rem;
+    }
+    
+    .headingTexts h4 {
+        font-size: 1.75rem;
+    }
+    
+    .headingTexts p { 
+        font-size: 0.85rem;
+    }
+
+    .headingButtons {
+        margin-top: 2rem;
+    }
+
+    .bookNow {
+        font-size: 14px;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:385px) {
+    .heading {
+        height: 60vh;
+    }
+}

@@ -1,0 +1,98 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1270.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.headerContainer h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #14274A;
+}
+
+.headerContainer p {
+    font-family: 'Montserrat', serif;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+    color: #14274A;
+}
+
+@media screen and (min-width: 2000px) {
+    .headerContainer {
+        max-width: 1980px;
+    }
+
+    .headerContainer h3 {
+        font-size: 72px;
+    }
+
+    .headerContainer p {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width:1550px) {
+    .headerContainer {
+        max-width: 1000px;
+    }
+
+    .headerContainer h3 {
+        font-size: 42px;
+    }
+
+    .headerContainer p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .headerContainer {
+        max-width: 850px;
+        margin: 0 5rem;
+    }
+
+    .headerContainer h3 {
+        font-size: 38px;
+    }
+
+    .headerContainer p {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .headerContainer {
+        max-width: 100%;
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .headerContainer{
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .headerContainer h3 {
+        font-size: 28px;
+    }
+
+    .headerContainer p {
+        font-size: 14px;
+        margin-top: 0.5rem;
+    }
+}
