@@ -1,9 +1,12 @@
 import React from 'react';
 import { BsFillCalendar2EventFill, BsFillArrowDownCircleFill } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
+
 import { Navbar } from '../';
 import './Heading.css';
 
 const Heading = ({ img }) => {
+  const navigate = useNavigate();
   return (
     <div className="heading">
         <img src={img} alt="heading-img" className="headingImg" />
@@ -19,7 +22,7 @@ const Heading = ({ img }) => {
                 </p>
               </div>
               <div className="headingButtons">
-                <button className="bookNow">
+                <button className="bookNow" onClick={() => navigate('/rooms')}>
                   <BsFillCalendar2EventFill />
                   Book Now
                 </button>

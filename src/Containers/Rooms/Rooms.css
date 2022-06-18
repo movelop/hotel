@@ -106,6 +106,7 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    cursor: pointer;
 }
 
 .vDBtn span {
@@ -160,6 +161,7 @@
     border: none;
     padding: 10px 1rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .actionButton span {

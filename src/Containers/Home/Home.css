@@ -74,6 +74,7 @@
     border: none;
     padding: 10px 2rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .exploreImageContainer {
@@ -124,6 +125,10 @@
     .exploreImageContainer {
         width: 800px;
         height: 600px;
+    }
+
+    .exploreImageContainer img {
+        width: 100%;
     }
 }
 

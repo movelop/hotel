@@ -68,11 +68,13 @@
     font-weight: 400;
     font-size: 16px;
     color: #F7F7F7;
+    cursor: pointer;
 }
 
 li {
     font-size: 16px;
     font-family: 'Montserrat', serif;
+    cursor: pointer;
 }
 
 .newsletter {
@@ -126,6 +128,10 @@ li {
 }
 
 @media screen and (min-width: 2000px) {
+    .footer {
+        padding: 4rem;
+    }
+
     .footerContainer {
         min-width: 1980px;
     }
@@ -135,11 +141,11 @@ li {
     }
 
     .addressHotel h1 {
-        font-size: 40px;
+        font-size: 56px;
     }
     
     .addressHotel p {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .addressPlace p, span {
