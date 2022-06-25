@@ -1,7 +1,8 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { BsTwitter, BsInstagram } from 'react-icons/bs';
-import { FaFacebookF } from 'react-icons/fa';
+import { NavLink, Link } from 'react-router-dom';
+import { AiFillMail } from 'react-icons/ai';
+import { BsTwitter, BsInstagram, BsPhoneFill } from 'react-icons/bs';
+import { FaFacebookF, FaLocationArrow } from 'react-icons/fa';
 
 
 import './Footer.css';
@@ -16,15 +17,22 @@ const Footer = () => {
                     <p>RESORTS</p>
                 </div>
                 <div className="addressPlace">
-                    <p>497 Evergreen Rd. Roseville, CA 95673</p>
-                    <span>+44 345 678 903</span>
-                    <p>heritage_resorts@gmail.com</p>
+                    <p className='addressPlaceInfo'><FaLocationArrow/> 497 Evergreen Rd. Roseville, CA 95673</p>
+                    <span className='addressPlaceInfo'><BsPhoneFill/> +44 345 678 903</span>
+                    <p className='addressPlaceInfo'> <AiFillMail/> heritage_resorts@gmail.com</p>
                 </div>
             </div>
             <ul className="flinks">
-                <li>About us</li>
-                <li>Contact</li>
-                <li>Terms&Conditions</li>
+                <Link to='/'>
+                    <li>About us</li>
+                </Link>
+                <Link to='/contact'>
+                    <li>Contact us</li>
+                </Link>
+                <Link to='/'>
+                    <li>Terms&conditions</li>
+                </Link>
+                
             </ul>
             <div className="slinks">
                 <NavLink to="/" className='social'>

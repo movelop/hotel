@@ -196,9 +196,8 @@
 }
 @media screen and (max-width: 550px ){
     .complementry {
-        margin-top: 1rem;
+        margin-top: 0;
     }
-
     .complementry h2 {
         font-size: 12px;
         font-weight: 500;

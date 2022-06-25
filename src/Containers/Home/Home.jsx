@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Footer, Heading, Testimonials } from '../../Components';
 import { images } from '../../Data/dummy';
@@ -22,7 +23,9 @@ const Home = () => {
                     Take your mind off the day-to-day of home 
                     life and find a private paradise for yourself.
                   </p>
-                  <button className='exploreButton'>Explore</button>
+                  <Link to="/rooms">
+                    <button className='exploreButton'>Explore</button>
+                  </Link>
                 </div>
                 <div className='line' />
               </div>
@@ -42,7 +45,9 @@ const Home = () => {
                     seems like time stands still watching the 
                     ocean. 
                   </p>
-                  <button className='exploreButton'>Explore</button>
+                  <Link to="/facilities">
+                    <button className='exploreButton'>Explore</button>
+                  </Link>
                 </div>
                 <div className='line'  />
               </div>

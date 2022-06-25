@@ -4,11 +4,14 @@ import { Heading, Testimonials, Footer, Header } from '../../Components';
 import { images, facilities } from '../../Data/dummy';
 import './Facilities.css';
 
-const desc = 'We want your stay at our lush hotel to be truly unforgettable.  That is why we give special attention to all of your needs so that we can ensure an experience quite unique. Luxury hotels offers the perfect setting with stunning views for leisure and our modern luxury resort facilities will help you enjoy the best of all.';
+const desc = 'We want your stay at our lush hotel to be truly unforgettable.  That is why we give special attention to all of your needs so that we can ensure an experience quite unique. Heritage resorts offers the perfect setting with stunning views for leisure and our modern luxury resort facilities will help you enjoy the best of all.';
 
 const Facility = ({ name, img }) => (
-  <div className="facility">
-    <img src={img} alt={name} />
+  <div className="facility"
+    style={{
+      background: ` no-repeat center/cover url(${img}) `,
+    }}
+  >
     <div className='overlay'/>
     <div className="facilityName">
       <h4>{name}</h4>

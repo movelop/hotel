@@ -1,4 +1,4 @@
-.headingSmall {
+.small {
     width: 100vw;
     height: 30vh;
     background-color: #14274A;
@@ -8,76 +8,73 @@
     gap: 4rem;
 }
 
-.headingSmallText {
+.smallText {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 9rem;
+}
+
+.smallText h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 44px;
+    font-size: 38px;
     color: #FFFFFF;
 
 }
 
 
 @media screen and (min-width:2000px) {
-    .headingSmall {
-        gap: 8rem;
+
+    .smallText  {
+        margin-top: 20rem;
     }
 
-    .headingSmallText {
+    .smallText h3 {
         font-size: 60px;
     }
 }
 
 @media screen and (max-width: 1550px) {
-    .headingSmall {
-        gap: 3rem;
-        height: 35vh;
-    }
-
-    .headingSmallText {
-        font-size: 38px;
+    .smallText h3 {
+        font-size: 32px;
     }
 }
 
 @media screen and (max-width: 1150px) {
-    .headingSmall {
-        gap: 5rem;
+    .small {
         height: 45vh;
     }
 
-    .headingSmallText {
+    .smallText h3 {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 850px) {
-    .headingSmall {
-        gap: 5rem;
+    .small {
         height: 25vh;
     }
 
-    .headingSmallText {
+    .smallText h3 {
         font-size: 28px;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .headingSmall {
-        gap: 5rem;
-        height: 35vh;
+    .smallText{
+       margin-top: 7rem; 
     }
 
-    .headingSmallText {
-        font-size: 24px;
+    .smallText h3 {
+        font-size: 22px;
     }
 }
 
 @media screen and (max-width: 385px) {
-    .headingSmall{
-        height: 45vh;
+    .small{
+        height: 30vh;
     }
 }
     

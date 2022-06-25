@@ -1,17 +1,16 @@
 .contact {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
 }
 
 .contactContainer {
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 6rem;
     max-width: 1380px;
     display: flex;
     flex-direction: column;
-    gap: 7rem;
+    gap: 5rem;
 }
 .contactTop {
     display: flex;
@@ -22,7 +21,7 @@
 .contactTop h3 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 42px;
     color: #14274A;
 }
 
@@ -30,7 +29,7 @@
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 20px;
     color: #14274A;
 }
 
@@ -42,14 +41,14 @@
 .contactAddress {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .contactAddress h2 {  
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 28px;
     color: #14274A;
 
 }
@@ -64,21 +63,20 @@
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     color: #14274A;
 }
 
 .arrow {
-    font-size: 36px;
+    font-size: 28px;
     color: #14274A;
 }
 
 .contactInfo p {
-    margin: 0.5rem 0;
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 26px;
     color: #14274A;
 }
 
@@ -86,7 +84,7 @@
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     color: #14274A;
     margin-bottom: 1rem;
 }
@@ -106,16 +104,16 @@
     gap: 5px;
 }
 
-label {
+.contactSub label {
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     color: #14274A;
 }
 
-input {
-    font-size: 24px;
+.contactSub input {
+    font-size: 18px;
     border:  2px solid rgba(20, 39, 74, 0.5);
     padding: 6px 10px;
     font-family: 'Montserrat';
@@ -126,9 +124,9 @@ input {
     background-color: #FFFFFF;
 }
 
-textarea {
+.contactSub textarea {
     resize: none;
-    font-size: 24px;
+    font-size: 18px;
     border:  2px solid rgba(20, 39, 74, 0.5);
     padding: 6px 10px;
     font-family: 'Montserrat';
@@ -139,8 +137,8 @@ textarea {
     background-color: #FFFFFF;
 }
 
-input:focus,
-textarea:focus {
+.contactSub input:focus,
+.contactSub textarea:focus {
     border:  3px solid rgba(20, 39, 74, 0.6);
 }
 
@@ -164,97 +162,98 @@ textarea:focus {
 }
 
 @media screen and (min-width:2000px) {
-    .contact {
-        height: 75vh;
-    }
-
     .contactContainer {
         max-width: 1980px;
     }
 
     .contactTop h3 {
-        font-size: 78px;
+        font-size: 66px;
     }
 
     .contactTop p {
-        font-size: 42px;
+        font-size: 38px;
     }
 
     .contactAddress h2
      {
-        font-size: 56px;
+        font-size: 48px;
     }
 
     .text {
-        font-size: 56px;
+        font-size: 48px;
     }
 
     .arrow {
-        font-size: 56px;
+        font-size: 48px;
     }
 
     .contactInfo p {
-        font-size: 42px;
+        font-size: 38px;
     }
 
     .contactSub h2 {
-        font-size: 56px;
-        margin-bottom: 2rem;
+        font-size: 48px;
+        margin-bottom: 1.5rem;
     }
 
     .form {
         width: 800px;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .formInput {
         gap: 10px;
     }
 
-    label {
-        font-size: 38px;
+    .contactSub label {
+        font-size: 34px;
     }
 
-    input,
-    textarea {
-        font-size: 32px;
+    .contactSub input,
+    .contactSub textarea {
+        font-size: 28px;
         padding: 25px 10px;
     }
 
     .contactButton button {
         font-size: 38px;
-        padding: 15px 25px;
+        padding: 20px 25px;
     }
 }
 
 @media screen  and (max-width:1550px) {
     .contactContainer {
         max-width: 1024px;
-        margin-top: 6rem;
-        gap: 4rem;
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+
+    .contactTop {
+        gap: 0.75rem;
     }
 
     .contactTop  h3{
-        font-size: 42px;
+        font-size: 36px;
     }
 
 
     .contactTop p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .contactAddress h2,
     .text,
     .arrow {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .contactInfo p {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .contactSub h2 {
-        font-size: 28px;
+        font-size: 22px;
+        margin-bottom: 1rem;
     }
 
     .form {
@@ -266,19 +265,19 @@ textarea:focus {
         gap: 3px;
     }
 
-    label {
-        font-size: 18px;
+    .contactSub label {
+        font-size: 14px;
     }
 
-    input,
-    textarea {
-        font-size: 16px;
+    .contactSub input,
+    .contactSub textarea {
+        font-size: 13px;
         padding: 4px 8px;
     }
 
     .contactButton button {
-        padding: 6px 12px;
-        font-size: 20px;
+        padding: 5px 10px;
+        font-size: 16px;
     }
 }
 
@@ -286,57 +285,48 @@ textarea:focus {
     .contactContainer {
         max-width: 850px;
         margin-top: 3rem;
+        
     }
 
     .contactTop h3 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .contactTop p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .contactAddress h2,
     .text,
     .arrow {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .contactInfo p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .contactSub h2 {
-        font-size: 24px;
-        margin-bottom: 0.75rem;
+        font-size: 18px;
+        margin-bottom: 0.5rem;
     }
 
     .form {
         width: 340px;
-        gap: 0.65rem;
+        gap: 0.5rem;
     }
 
     .formInput {
         gap: 2px;
     }
 
-    label {
-        font-size: 18px;
-    }
-
-    .contactButton button {
-        padding: 6px 14px;
-        font-size: 19px;
-    }
+    
 }
 
 @media screen and (max-width:850px) {
-    .contact {
-        height: 80vh;
-    }
     .contactContainer {
         width: 90%;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .contactBottom {
@@ -348,54 +338,39 @@ textarea:focus {
         gap: 1rem;
     }
 
-    .contactAddress h2,
-    .text,
-    .arrow {
-        font-size: 28px;
-    }
-
-    .contactInfo p {
-        font-size: 23px;
-        margin: 0;
-    }
-
-    .contactSub h2 {
-        font-size: 28px;
-    }
-
     .form {
-        width: 100%;
+        width: 60%;
     }
 
-    label {
-        font-size: 22px;
+    .contactSub label {
+        font-size: 16px;
     }
 
-    input,
-    textarea {
-        font-size: 18px;
-        padding: 0;
+    .contactSub input,
+    .contactSub textarea {
+        font-size: 16px;
+        padding: 2px;
 
     }
     
 }
 
 @media screen and (max-width:550px) {
-    .contact {
-        height: 95vh;
-    }
-
     .contactContainer {
         margin-top: 2rem;
         gap: 2rem;
     }
 
+    .contactTop {
+        gap: 0.2rem;
+    }
+
     .contactTop h3 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .contactTop p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .contactAddress {
@@ -405,23 +380,29 @@ textarea:focus {
     .contactAddress h2,
     .text,
     .arrow {
-        font-size: 22px;
+        font-size: 17px;
     }
 
     .contactInfo p {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .contactSub h2 {
-        font-size: 22px;
+        font-size: 17px;
     }
 
-    label {
+    .form {
+        width: 100%;
+    }
+
+    .contactSub label {
         font-size: 16px;
         font-weight: 500;
     }
 
-    input, textarea {
+    .contactSub input, 
+    .contactSub textarea {
+        font-size: 18px;
         border: 1.5px solid rgba(20, 39, 74, 0.5);
     }
 
@@ -440,46 +421,4 @@ textarea:focus {
     .contactTop {
         gap: 0.5rem;
     }
-
-    .contactTop h3 {
-        font-size: 22px;
-    }
-
-    .contactTop p {
-        font-size: 12px;
-    }
-
-    .contactBottom {
-        gap: 1rem;
-    }
-
-    .contactAddress h2,
-    .text,
-    .arrow {
-        font-size: 18px;
-    }
-
-    .contactInfo p {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .contactSub h2 {
-        font-size: 18px;
-    }
-
-    label {
-        font-size: 12px;
-    }
-
-    input, textarea {
-        font-size: 14px;
-    }
-
-    .contactButton button {
-        font-size: 14px;
-        padding: 3px 6px;
-    }
-
-
 }

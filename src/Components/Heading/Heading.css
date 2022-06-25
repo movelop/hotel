@@ -1,23 +1,22 @@
 .heading {
     width: 100vw;
-    height: 80vh;
+    height: 50vh;
     position: relative;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(20, 39, 74, 0.5);
+    margin-bottom: 6rem;
 }
 
-.headingImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 
 .headingOverlay {
     position: absolute;
     top: 0;
     left: 0;
     background: rgba(20, 39, 74, 0.5);
-    z-index: 999;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -27,7 +26,7 @@
 .headingContainer {
     width: 100%;
     max-width: 1380px;
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
 
 .headingTexts {
@@ -40,7 +39,7 @@
 .headingTexts h6 {
     font-family: 'Montserrat', serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 28px;
     color: #FFFFFF;
 }
 
@@ -48,7 +47,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 56px;
     letter-spacing: 0.07em;
     color: #FFFFFF;
 }
@@ -57,7 +56,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.75rem;
+    font-size: 32px;
     letter-spacing: 0.4em;
     color: #FFFFFF;
 }
@@ -66,62 +65,147 @@
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 18px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
 }
 
-.headingButtons {
-    margin-top: 6rem;
+.headerSearch {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    z-index: 99;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
-.bookNow {
-    padding: 10px 15px;
-    font-family: 'Montserrat', serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    color: #FFFFFF;
-    background-color: #E0B973;
-    border: none;
+.headerSearchContainer {
+    width: 100%;
+    max-width: 1024px;
+    height: 50px;
+    background-color: #fff;
+    border: 4px solid #E0B973;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 5px;
+}
+
+.headerIcon {
+    color: lightgray;
+}
+
+.headerSearchItem {
     display: flex;
+    align-items: center;
     gap: 10px;
-    align-items: center;
-    cursor: pointer;
+    height: 100%;
+    padding: 0px 10px;
+    border-right: 4px solid #E0B973;
 }
 
-.scroll {
-    margin-top: 4rem;
+.headerSearchItem:first-child {
+    flex: 1
+}
+
+.headerSearchItem:nth-child(2) {
+    flex: 1.5;
+}
+
+.headerSearchItem:last-child {
+    flex: 1;
+    padding: 0;
+    border-right: none;
+}
+
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.headerSearchInput::placeholder {
+    color: lightgray;
+}
+
+.headerSearchText {
+    color: lightgray;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.date {
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+
+.options {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    background-color: #fff;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+    width: 200px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #000;
+}
+
+.optionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.scrollText {
-    font-family: 'Montserrat', serif;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    margin-bottom: 1rem;
+.optionCounterButton:disabled {
+    cursor: not-allowed;
 }
 
-
-.scrollIcon {
-    color: #FFFFFF;
-    font-size: 45px;
+.headingButton {
+    background-color: #142442;
+    color: white;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
     cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
 }
+
+
 
 @media screen and (min-width: 2000px) {
     .headingContainer{
         min-width: 1980px;
-        margin-top: 10rem;
+        margin-top: 20rem;
     }
 
     .headingTexts {
@@ -147,30 +231,44 @@
         letter-spacing: 0.2em;
     }
 
-    .headingButtons {
-        margin-top: 12rem;
+    .headerSearchContainer {
+        max-width: 1980px;
+        height: 100px;
+    }
+
+    .headerSearchInput,
+    .headerSearchText {
+        font-size: 26px;
+    }
+
+    .options {
+        top: 100px;
+        padding: 10px;
+    }
+
+    .optionItem {
+        width: 400px;
     }
     
-    .bookNow {
-        padding: 20px 30px;
-        font-size: 60px;
-        gap: 20px;
-        align-items: center;
+    .optionCounter {
+        font-size: 16px;
     }
     
-    .scroll {
-        margin-top: 7rem;
-        
+    .optionCounterButton {
+        width: 40px;
+        height: 40px;
     }
-    
-    .scrollText {  
-        font-size: 48px;
-        margin-bottom: 3rem;
+
+    .optionText {
+        font-size: 24px;
     }
-    
-    
-    .scrollIcon {
-        font-size: 68px;
+
+    .optionCounterNumber {
+        font-size: 28px;
+    }
+
+    .headingButton {
+        font-size: 26px;
     }
 }
 
@@ -178,7 +276,7 @@
 @media screen and (max-width: 1550px ){
     .headingContainer {
         max-width: 1024px;
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
 
     .headingTexts h6 {
@@ -199,20 +297,19 @@
         font-size: 1.25rem;
     }
 
-    .headingButtons {
-        margin-top: 4rem;
-    }
-    
-    .scroll {
-        margin-top: 3rem;
+    .headerSearchContainer{
+        height: 45px;
     }
 
 }
 
 @media screen and (max-width: 1150px) {
+    .heading {
+        height: 60vh;
+    }
     .headingContainer {
         max-width: 850px;
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
 
     .headingTexts {
@@ -238,31 +335,38 @@
         font-size: 1.1rem;
     }
 
-    .headingButtons {
-        margin-top: 1.5rem;
+    .headerSearchContainer {
+        max-width: 850px;
+        height: 40px;
     }
 
-    .bookNow {
-        font-size: 18px;
+    
+    .optionCounterButton {
+        width: 20px;
+        height: 20px;
     }
 
-    .scroll {
-        margin-top: 1rem;
+    .optionText {
+        font-size: 16px;
     }
 
-    .scrollIcon {
-        font-size: 30px;
+    .optionCounterNumber {
+        font-size: 16px;
     }
 
+    .headingButton {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 850px) {
     .heading {
-        height: 50vh;
+        height: 40vh;
+        margin-bottom: 5rem;
     }
     .headingContainer {
         max-width: 90%;
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
 
 
@@ -284,19 +388,19 @@
         font-size: 1.25rem;
     }
 
-    .headingButtons {
-        margin-top: 5rem;
+    .headerSearchContainer {
+        max-width: 90%;
     }
-
-    .scroll {
-        display: none;
-    }
-
 }
 
 @media screen and (max-width:550px) {
+    .heading {
+        margin-bottom: 4rem;
+    }
+
     .headingContainer {
-        margin-top: 3rem;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
     }
 
     .headingTexts {
@@ -319,22 +423,45 @@
         font-size: 0.85rem;
     }
 
-    .headingButtons {
-        margin-top: 2rem;
+    .headerSearchContainer {
+        height: 30px;
     }
 
-    .bookNow {
-        font-size: 14px;
+    .headerSearchInput,
+    .headerSearchText {
+        font-size: 8px;
     }
 
-    .scroll {
-        display: none;
+    .headingButton {
+        font-size: 9px;
     }
 
 }
 
 @media screen and (max-width:385px) {
     .heading {
-        height: 60vh;
+        height: 50vh;
+    }
+
+    .optionItem {
+        width: 120px;
+    }
+    
+    .optionCounter {
+        font-size: 9px;
+    }
+    
+    .optionCounterButton {
+        width: 10px;
+        height: 10px;
+        font-size: 9px;
+    }
+
+    .optionText {
+        font-size: 9px;
+    }
+
+    .optionCounterNumber {
+        font-size: 12px;
     }
 }

@@ -3,13 +3,12 @@ import React from 'react';
 import { Navbar } from '../'
 import './HeadingSmall.css';
 
-const HeadingSmall = () => {
+const HeadingSmall = ({ text }) => {
   return (
-    <div className='headingSmall'>
+    <div className='small'>
         <Navbar />
-
-        <div className="headingSmallText">
-            <h3>CONTACT-US</h3>
+        <div className="smallText">
+            <h3>{text}</h3>
         </div>
     </div>
   )

@@ -46,6 +46,13 @@
     letter-spacing: 0.6em;
 }
 
+.addressPlaceInfo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
 .addressPlace p, span {
     font-family: 'Montserrat', serif;
     font-style: normal;
@@ -75,6 +82,7 @@ li {
     font-size: 16px;
     font-family: 'Montserrat', serif;
     cursor: pointer;
+    color: #F7F7F7;
 }
 
 .newsletter {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { TbCurrencyNaira } from 'react-icons/tb';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
+import { useLocation } from 'react-router-dom';
 
 import { Heading, Header, Testimonials, Footer } from '../../Components';
 import { images, roomsData } from '../../Data/dummy';
@@ -10,13 +11,19 @@ const name = 'ROOMS AND RATES';
 const desc = 'Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes, comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces. '
 
 const RoomDetail = ({ room }) => {
+  const location = useLocation();
   const [index, setIndex] = useState(0);
   const [openDetail, setOpenDetail] = useState(false);
   const { name, price, roomDesc, images, isHall } = room;
+
+
   return(
     <div className='room'>
-      <div className="roomImageContainer">
-        <img src={images[index]} alt="room" />
+      <div className="roomImageContainer"
+        style={{
+          background: ` no-repeat center/cover url(${images[index]}) `,
+        }}
+      >
         <div className="imageOverlay">
           <div className='overlayContainer'>
           <div className='selectors'>

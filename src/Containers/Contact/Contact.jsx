@@ -7,7 +7,7 @@ import './Contact.css';
 const Contact = () => {
   return (
     <div>
-        <HeadingSmall />
+        <HeadingSmall text={'CONTACT-US'}/>
         <div className="contact">
           <div className="contactContainer">
             <div className="contactTop">
