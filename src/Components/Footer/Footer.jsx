@@ -2,7 +2,8 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { AiFillMail } from 'react-icons/ai';
 import { BsTwitter, BsInstagram, BsPhoneFill } from 'react-icons/bs';
-import { FaFacebookF, FaLocationArrow } from 'react-icons/fa';
+import { FaFacebookF } from 'react-icons/fa';
+import { HiLocationMarker } from 'react-icons/hi';
 
 
 import './Footer.css';
@@ -17,7 +18,7 @@ const Footer = () => {
                     <p>RESORTS</p>
                 </div>
                 <div className="addressPlace">
-                    <p className='addressPlaceInfo'><FaLocationArrow/> 497 Evergreen Rd. Roseville, CA 95673</p>
+                    <p className='addressPlaceInfo'><HiLocationMarker/> 497 Evergreen Rd. Roseville, CA 95673</p>
                     <span className='addressPlaceInfo'><BsPhoneFill/> +44 345 678 903</span>
                     <p className='addressPlaceInfo'> <AiFillMail/> heritage_resorts@gmail.com</p>
                 </div>

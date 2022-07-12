@@ -10,7 +10,7 @@
     max-width: 1380px;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
 }
 .contactTop {
     display: flex;
@@ -19,9 +19,9 @@
 }
 
 .contactTop h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'EB Garamond', serif;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 28px;
     color: #14274A;
 }
 
@@ -29,7 +29,7 @@
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     color: #14274A;
 }
 
@@ -48,7 +48,7 @@
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 24px;
     color: #14274A;
 
 }
@@ -63,7 +63,7 @@
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     color: #14274A;
 }
 
@@ -76,7 +76,7 @@
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 22px;
     color: #14274A;
 }
 
@@ -84,7 +84,7 @@
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     color: #14274A;
     margin-bottom: 1rem;
 }
@@ -94,7 +94,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
-    width: 570px;
+    width: 400px;
 }
 
 .formInput {
@@ -108,12 +108,12 @@
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #14274A;
 }
 
 .contactSub input {
-    font-size: 18px;
+    font-size: 16px;
     border:  2px solid rgba(20, 39, 74, 0.5);
     padding: 6px 10px;
     font-family: 'Montserrat';
@@ -126,7 +126,8 @@
 
 .contactSub textarea {
     resize: none;
-    font-size: 18px;
+    width: 100%;
+    font-size: 16px;
     border:  2px solid rgba(20, 39, 74, 0.5);
     padding: 6px 10px;
     font-family: 'Montserrat';
@@ -142,19 +143,16 @@
     border:  3px solid rgba(20, 39, 74, 0.6);
 }
 
-.contactButton {
-    margin-top: 5px;
-}
 
-.contactButton button {
+ .contactSub button {
     background-color: #E0B973;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     border: none;
-    padding: 10px 20px;
+    padding: 0.25em 0.5em;
     border-radius: 5px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     cursor: pointer;
     color: #FFFFFF;
@@ -215,7 +213,7 @@
         padding: 25px 10px;
     }
 
-    .contactButton button {
+    .contactSub button {
         font-size: 38px;
         padding: 20px 25px;
     }
@@ -233,31 +231,31 @@
     }
 
     .contactTop  h3{
-        font-size: 36px;
+        font-size: 26px;
     }
 
 
     .contactTop p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .contactAddress h2,
     .text,
     .arrow {
-        font-size: 22px;
-    }
-
-    .contactInfo p {
         font-size: 20px;
     }
 
+    .contactInfo p {
+        font-size: 18px;
+    }
+
     .contactSub h2 {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 1rem;
     }
 
     .form {
-        width: 380px;
+        width: 320px;
         gap: 0.75rem;
     }
 
@@ -275,9 +273,9 @@
         padding: 4px 8px;
     }
 
-    .contactButton button {
+    .contactSub button {
         padding: 5px 10px;
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -289,11 +287,11 @@
     }
 
     .contactTop h3 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .contactTop p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .contactAddress h2,
@@ -312,7 +310,7 @@
     }
 
     .form {
-        width: 340px;
+        width: 280px;
         gap: 0.5rem;
     }
 
@@ -380,15 +378,15 @@
     .contactAddress h2,
     .text,
     .arrow {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .contactInfo p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .contactSub h2 {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .form {
@@ -406,7 +404,7 @@
         border: 1.5px solid rgba(20, 39, 74, 0.5);
     }
 
-    .contactButton button {
+    .contactSub button {
         font-size: 16px;
         padding: 4px 8px;
     }

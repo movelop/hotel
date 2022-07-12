@@ -20,8 +20,8 @@
     position: relative;
     width: 45%;
     height: 400px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     overflow: hidden;
 }
 
@@ -52,7 +52,7 @@
     text-transform: uppercase;
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     color: #14274A;
 
 }
@@ -65,6 +65,10 @@
 
     .facility {
         height: calc((40/100 * 400px) + 400px);
+    }
+
+    .facilityName {
+        font-size: 32px;
     }
 }
 
@@ -79,7 +83,7 @@
     }
 
     .facilityName h4 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
 }
@@ -89,7 +93,7 @@
         max-width: 850px;
     }
     .facilityName h4 {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -101,7 +105,11 @@
 
     .facility {
         width: 90%;
-        height: 450px
+        height: calc(120/100 * 400px);
+    }
+
+    .facilityName h4 {
+        font-size: 18px;
     }
 }
 
@@ -113,12 +121,10 @@
 
     .facilityName {
         height: 30px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
     }
 
     .facilityName h4 {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 

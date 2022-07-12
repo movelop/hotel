@@ -42,7 +42,7 @@
 }
 
 .logoText h1 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'EB Garamond', serif;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.10em;
@@ -51,7 +51,7 @@
 }
 
 .logoText h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'EB Garamond', serif;
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 0.4em;
@@ -117,7 +117,7 @@
 }
 
 .navLinkSmall span {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'EB Garamond', serif;
     margin: 2rem 0;
     cursor: pointer;
     color: #14274A;

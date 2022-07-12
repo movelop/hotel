@@ -1,0 +1,191 @@
+.booking {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.checkReservation {
+    width: 100%;
+    max-width: 1380px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkReservation h1 {
+    font-size: 24px;
+    color: #14274A;
+}
+
+.checkReservationForm {
+    display: flex;
+    gap: 10px;
+}
+
+.checkReservationForm input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border:  1px solid #E0B973;
+    font-size: 16px;
+}
+
+.checkReservationForm input:focus {
+    border: 1px solid #E0B973;
+}
+
+.bookingButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: #14274A;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.disclaimer {
+    font-size: 16px;
+    color: #6278a0;
+}
+
+.bookingHeader {
+    margin-top: 4rem;
+}
+
+.bookingHeader > h1 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 38px;
+    color: #14274A;
+}
+
+.bookingSearch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+@media screen and (min-width: 2000px) {
+    .checkReservation {
+        max-width: 1980px;
+        margin-top: 4rem;
+        gap: 20px;
+    }
+
+    .checkReservation h1 {
+        font-size: 32px;
+    }
+
+    .checkReservationForm {
+        gap: 20px;
+    }
+
+    .checkReservationForm input {
+        width: 550px;
+        font-size: 24px;
+        padding: 20px;
+        border: 2px solid #E0B973;
+    }
+
+    .bookingButton {
+        font-size: 24px;
+        padding: 10px 20px;
+        width: 150px;
+    }
+
+    .disclaimer {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:1550px) {
+    .checkReservation {
+        max-width: 1024px;
+    }
+
+    .checkReservation h1 {
+        font-size: 20px;
+    }
+
+    .checkReservationForm input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .bookingButton {
+        font-size: 14px;
+    }
+
+    .disclaimer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .checkReservation {
+        max-width: 850px;
+    }
+
+    .checkReservation h1 {
+        font-size: 18px;
+    }
+
+    .checkReservationForm {
+        gap: 7px;
+    }
+
+    .bookingButton {
+        font-size: 13px;
+        width: 80px;    
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .checkReservation {
+        width: 90%;
+    }
+
+    .checkReservationForm {
+        gap: 5px;
+    }
+
+    .bookingButton {
+        width: 70px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .checkReservation h1 {
+        font-size: 16px;
+    }
+
+    .checkReservationForm {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .checkReservationForm input {
+        flex-basis: 100%;
+        width: 90%;
+    }
+
+    .bookingButton {
+        flex-basis: 100%;
+        width: 90%;
+        margin: 0;
+    }
+}
+

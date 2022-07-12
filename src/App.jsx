@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import './App.css';
-import { Contact, Facilities, Home, NoPage, Rooms } from './Containers';
+import { Booking, Contact, Existing, Facilities, Home, NoPage, Rooms, SingleRoom } from './Containers';
 
 const App = () => {
   const location = useLocation();
@@ -17,8 +17,11 @@ const App = () => {
                <Route path='/' element={ <Home /> }/>
                <Route path='/facilities' element={ <Facilities /> }/>
                <Route path='/rooms' element={ <Rooms /> }/>
+               <Route path='/rooms/:id' element={ <SingleRoom />} />
                <Route path='/contact' element={ <Contact /> }/>
                <Route path='*' element={ <NoPage /> }/>
+               <Route path='booking' element={ <Booking /> }/>
+               <Route path='booking/existing' element={ <Existing /> }/>
            </Routes>
     </div>
   )

@@ -2,11 +2,12 @@ import React from 'react'
 
 import { Footer, HeadingSmall } from '../../Components'
 import './NoPage.css';
+import { images } from '../../Data/dummy';
 
 const NoPage = () => {
   return (
     <div>
-      <HeadingSmall text={'PAGE NOT FOUND'} />
+      <HeadingSmall text={'PAGE NOT FOUND'} img={images.nopage} />
       <div className="nopage">
         <div className="nopageContainer">
           <h2 style={{ minHeight: "50vh" }}>

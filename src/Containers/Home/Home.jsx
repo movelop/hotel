@@ -52,7 +52,7 @@ const Home = () => {
                 <div className='line'  />
               </div>
               <div className="exploreImageContainer">
-                <img src={images.beachImage} alt="exploreRooms" />
+                <img src={images.explore2} alt="exploreRooms" />
               </div>
             </div>
           </div>

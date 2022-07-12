@@ -7,17 +7,17 @@
 
 .testimonialsContainer {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1380px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .testimonialsContainer h1 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'EB Garamond', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 44px;
+    font-size: 38px;
     line-height: 72px;
     color: #14274A;
 
@@ -34,7 +34,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 24px;
     color: #14274A;
 }
 
@@ -43,7 +43,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     color: #14274A;
 
 }
@@ -55,7 +55,7 @@
 }
 
 .testimonialsButtons button {
-    padding: 10px;
+    padding: 0.5em;
     display: flex;
     align-items: center;
     background-color: #E0B973;
@@ -76,7 +76,7 @@
     }
 
     .testimonialsContainer h1 {
-        font-size: 72px;
+        font-size: 64px;
     }
 
     .testimonialsText {
@@ -84,11 +84,11 @@
     }
 
     .testimonialsText h5 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .testimonialsText p {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .testimonialsButtons {
@@ -100,23 +100,47 @@
     }
 }
 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:1550px) {
+    .testimonialsContainer {
+        max-width: 1024px;
+    }
     .testimonialsContainer h1 {
         font-size: 32px;
     }
 
     .testimonialsText h5 {       
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .testimonialsText p {
-        font-size: 18px;
+        font-size: 16px;
+    
+    }
+
+    .testimonialsButtons button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .testimonialsContainer {
+        max-width: 850px;
+    }
+    .testimonialsContainer h1 {
+        font-size: 28px;
+    }
+
+    .testimonialsText h5 {       
+        font-size: 20px;
+    }
+
+    .testimonialsText p {
+        font-size: 15px;
     
     }
 
     .testimonialsButtons button {
         font-size: 14px;
-        padding: 8px;
     }
 }
 
@@ -132,11 +156,11 @@
         margin: 2rem 0;
     }
     .testimonialsContainer h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .testimonials h5 {       
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
     }
 
@@ -146,12 +170,12 @@
     }
 
     .testimonialsText p {
-        font-size: 14px;
+        font-size: 12px;
+        margin-top: 0.5rem;
     }
 
     .testimonialsButtons button {
         font-size: 14px;
-        padding: 8px;
     }
 }
 

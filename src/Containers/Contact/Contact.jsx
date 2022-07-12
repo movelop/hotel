@@ -2,12 +2,13 @@ import React from 'react';
 import { HiOutlineArrowRight } from 'react-icons/hi'
 
 import { HeadingSmall, Footer } from '../../Components';
+import { images } from '../../Data/dummy';
 import './Contact.css';
 
 const Contact = () => {
   return (
     <div>
-        <HeadingSmall text={'CONTACT-US'}/>
+        <HeadingSmall text={'CONTACT-US'} img={images.queen}/>
         <div className="contact">
           <div className="contactContainer">
             <div className="contactTop">
@@ -43,11 +44,9 @@ const Contact = () => {
                     <label >Message</label>
                     <textarea rows={10} />
                   </div>
-                  <div className="contactButton">
                     <button type="submit">
                       Submit
                     </button>
-                  </div>
                 </form>
               </div>
             </div>
