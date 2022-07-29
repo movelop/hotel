@@ -2,9 +2,10 @@ import React, { useState, } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import useFetch from '../../hooks/useFetch';
-import { Availability, Footer, HeadingSearch, HeadingSmall, Testimonials } from '../../Components';
+import { Availability, Footer, HeadingSearch, HeadingSmall, Loading, Testimonials } from '../../Components';
 import { images } from '../../Data/dummy';
 import './Booking.css';
+import axios from 'axios';
 
 const Booking = () => {
   const [formData, setFormData] = useState({
@@ -12,14 +13,14 @@ const Booking = () => {
     email: '',
   });
   const [error, setError] = useState('');
-  const { data } = useFetch('/api/rooms');
+  const { data, loading } = useFetch('/api/rooms');
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.confirmation === "" && formData.email === "") {
       return setError("Please fill out ONE of these fields.");
@@ -27,8 +28,12 @@ const Booking = () => {
     if (formData.confirmation.length > 0 && formData.email.length > 0) {
       return setError("Only Fill out ONE of these fields.");
     }
-
-    navigate('/booking/existing');
+    try {
+      const res = await axios.post('/api/bookings', formData);
+      navigate('/booking/existing', { state: { data: res.data }});
+    } catch (error) {
+      navigate('/booking/existing', { state: { error: error.response.data }});
+    }
   };
 
   return (
@@ -39,7 +44,7 @@ const Booking = () => {
           <h1>Already have a Booking?</h1>
           <div className='checkReservationForm'>
             <input
-              maxLength="6"
+              maxLength="12"
               name="confirmation"
               type="text"
               placeholder="Enter Confirmation Code"
@@ -68,9 +73,15 @@ const Booking = () => {
         <div className="bookingSearch">
           <HeadingSearch />
         </div>
-        {data && (
-          <Availability data={data} />
-        )}
+        <div className="availability">
+          {loading ? (<Loading />) : (
+            <>
+              {data.map((room) => (
+                <Availability room={room} key={room._id} />
+              ))}
+            </>
+          )}
+        </div>
       </div>
       <Testimonials />
       <Footer />

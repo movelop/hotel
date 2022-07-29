@@ -6,3 +6,5 @@ export { default as Contact } from './Contact/Contact';
 export { default as NoPage } from './NoPage/NoPage';
 export { default as Booking } from './Booking/Booking';
 export { default as Existing } from './Booking/Existing/Existing';
+export { default as Checkout } from './Booking/Checkout/Checkout';
+export { default as Confirmation } from './Booking/Confirmation/Confirmation';

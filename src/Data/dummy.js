@@ -5,7 +5,10 @@ import explore2 from '../Assets/explore2.jpg';
 import queen from '../Assets/queen.jpg';  
 import nopage from '../Assets/404.jpg';
 import lobby from '../Assets/lobby.jpg'; 
-import existing from '../Assets/existing.jpg';                           
+import existing from '../Assets/existing.jpg';         
+import checkout from '../Assets/checkout.jpg';         
+import confirm from '../Assets/confirm.jpg';  
+import room from '../Assets/room.jpg';        
 
 export const navData = [
     {
@@ -35,5 +38,8 @@ export const images = {
     nopage,
     lobby,
     existing,
+    checkout,
+    confirm,
+    room,
 }
 

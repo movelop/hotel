@@ -7,3 +7,4 @@ export { default as HeadingSmall } from './HeadingSmall/HeadingSmall';
 export { default as HeadingSearch } from './HeadingSearch/HeadingSearch';
 export { default as RoomDetails } from './RoomDetails/RoomDetails';
 export { default as Availability } from './Availability/Availability';
+export { default as Loading } from './Loading/Loading';

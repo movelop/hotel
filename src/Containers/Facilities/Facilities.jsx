@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Heading, Testimonials, Footer, Header } from '../../Components';
+import { Heading, Testimonials, Footer, Header, Loading } from '../../Components';
 import { images } from '../../Data/dummy';
 import useFetch from '../../hooks/useFetch';
 import './Facilities.css';
@@ -21,16 +21,20 @@ const Facility = ({ item }) => (
 )
 
 const Facilities = () => {
-  const { data } = useFetch('/api/facilities')
+  const { data, loading } = useFetch('/api/facilities')
   return (
     <div>
         <Heading img = {images.facilitiesImg} />
         <Header name='FACILITIES'  desc = { desc } />
         <div className="facilities">
           <div className="facilitiesContainer">
-            {data.map((item) => (
-              <Facility key={item._id} item={item} />
-            ))}
+            {loading ? (<Loading />) : (
+              <>
+                {data.map((item) => (
+                  <Facility key={item._id} item={item} />
+                ))}
+              </>
+            )}
           </div>
         </div>
         <Testimonials />

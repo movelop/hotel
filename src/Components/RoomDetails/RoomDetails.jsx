@@ -25,7 +25,7 @@ const RoomDetail = ({ item }) => {
           <div className="actionButton">
             <div className="roomPrice">
               <TbCurrencyNaira />
-              <span>{price}</span>
+              <span>{price.toLocaleString("en-US")}</span>
             </div>
             <Link 
               to={`/rooms/${_id}`}

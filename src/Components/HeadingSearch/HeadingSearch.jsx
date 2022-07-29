@@ -10,53 +10,41 @@ import { SearchContext } from '../../contexts/SearchContext';
 import './HeadingSearch.css';
 
 const HeadingSearch = () => {
+    const { search, dates, options } = useContext(SearchContext);  
     const [openDate, setOpenDate] = useState(false);
-    const [dates, setDates] = useState([
-        {
-        startDate: new Date(),
-        endDate: new Date(),
-        key: 'selection'
-        }
-    ]);
-    const [openOptions, setOpenOptions] = useState(false);
-    const [options, setOptions] = useState({
-        adult: 1,
-        children: 0,
-        rooms: 1,
-    });
+    const [searchDates, setSearchDates] = useState(dates);
+    const [opensearchOptions, setOpensearchOptions] = useState(false);
+    const [searchOptions, setSearchOptions] = useState(options);
     const navigate = useNavigate();
-    const { dispatch } = useContext(SearchContext);  
 
-    const handleOptions = (name, operation) => {
-        setOptions((prev) => {
+    const handlesearchOptions = (name, operation) => {
+        setSearchOptions((prev) => {
         return {
             ...prev,
-            [name]: operation === 'increment' ? options[name] + 1 : options[name] - 1
+            [name]: operation === 'increment' ? searchOptions[name] + 1 : searchOptions[name] - 1
         }
         })
     }
 
     const handleSearch = () => {
-        dispatch({ type: 'NEW_SEARCH', payload: { dates, options } });
-        navigate('/booking', { state: { dates, options } });
+        search( searchDates, searchOptions);
+        navigate('/booking', { state: { searchDates, searchOptions } });
     }
+    
     return (
         <div className="headerSearchContainer">
             <div className="headerSearchItem" >
                 <BsFillCalendar2EventFill className='headerIcon' />
                 <span className="headerSearchText" onClick={() => setOpenDate(!openDate)}>
-                {`${format(dates[0].startDate, "dd/MM/yyyy")} to ${format(
-                    dates[0].endDate,
-                    "dd/MM/yyyy"
-                )}`}
+                {`${format(new Date(searchDates[0].startDate), "dd/MM/yyyy")} to ${format(new Date(searchDates[0].endDate), "dd/MM/yyyy")}`}
                 </span>
                 {openDate && (
                     <div className="date" onMouseLeave={() => setOpenDate(false)}>
                         <DateRange
                         editableDateInputs={true}
-                        onChange={(item) => setDates([item.selection])}
+                        onChange={(item) => setSearchDates([item.selection])}
                         moveRangeOnFirstSelection={false}
-                        ranges={dates}
+                        ranges={searchDates}
                         minDate={new Date()}
                         />
                     </div>
@@ -64,27 +52,27 @@ const HeadingSearch = () => {
             </div>
             <div className="headerSearchItem">
                 <BsFillPersonFill className='headerIcon' />
-                <span className="headerSearchText" onClick={() => setOpenOptions(!openOptions)}>
-                {`${options.adult} adult · ${options.children} children · ${options.rooms} room`}
+                <span className="headerSearchText" onClick={() => setOpensearchOptions(!opensearchOptions)}>
+                {`${searchOptions.adult} adult · ${searchOptions.children} children · ${searchOptions.rooms} room`}
                 </span>
-                {openOptions && (
-                    <div className="options" onMouseLeave={() => setOpenOptions(false)}>
+                {opensearchOptions && (
+                    <div className="searchOptions" onMouseLeave={() => setOpensearchOptions(false)}>
                         <div className="optionItem">
                             <span className="optionText">Adult</span>
                             <div className="optionCounter">
                                 <button
-                                    disabled={options.adult <= 1}
+                                    disabled={searchOptions.adult <= 1}
                                     className="optionCounterButton"
-                                    onClick={() => handleOptions('adult', 'decrement')}
+                                    onClick={() => handlesearchOptions('adult', 'decrement')}
                                 >
                                     -
                                 </button>
                                 <span className="optionCounterNumber">
-                                    {options.adult}
+                                    {searchOptions.adult}
                                 </span>
                                 <button
                                     className="optionCounterButton"
-                                    onClick={() => handleOptions('adult', 'increment')}
+                                    onClick={() => handlesearchOptions('adult', 'increment')}
                                 >
                                     +
                                 </button>
@@ -94,18 +82,18 @@ const HeadingSearch = () => {
                             <span className="optionText">Children</span>
                             <div className="optionCounter">
                                 <button
-                                    disabled={options.children <= 0}
+                                    disabled={searchOptions.children <= 0}
                                     className="optionCounterButton"
-                                    onClick={() => handleOptions('children', 'decrement')}
+                                    onClick={() => handlesearchOptions('children', 'decrement')}
                                 >
                                     -
                                 </button>
                                 <span className="optionCounterNumber">
-                                    {options.children}
+                                    {searchOptions.children}
                                 </span>
                                 <button
                                     className="optionCounterButton"
-                                    onClick={() => handleOptions('children', 'increment')}
+                                    onClick={() => handlesearchOptions('children', 'increment')}
                                 >
                                     +
                                 </button>
@@ -115,18 +103,18 @@ const HeadingSearch = () => {
                             <span className="optionText">Room</span>
                             <div className="optionCounter">
                                 <button
-                                    disabled={options.rooms <= 1}
+                                    disabled={searchOptions.rooms <= 1}
                                     className="optionCounterButton"
-                                    onClick={() => handleOptions('rooms', 'decrement')}
+                                    onClick={() => handlesearchOptions('rooms', 'decrement')}
                                 >
                                     -
                                 </button>
                                 <span className="optionCounterNumber">
-                                    {options.rooms}
+                                    {searchOptions.rooms}
                                 </span>
                                 <button
                                     className="optionCounterButton"
-                                    onClick={() => handleOptions('rooms', 'increment')}
+                                    onClick={() => handlesearchOptions('rooms', 'increment')}
                                 >
                                     +
                                 </button>

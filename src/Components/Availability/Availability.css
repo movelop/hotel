@@ -1,12 +1,3 @@
-.availability {
-    width: 100%;
-    max-width: 1024px;
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    color: #14274A;
-}
-
 .availabilityCard {
     display: flex;
     padding: 1rem;
@@ -105,11 +96,6 @@
 
 
 @media screen and (min-width: 2000px) {
-    .availability {
-        margin-top: 2.5rem;
-        max-width: 1580px;
-    }
-
     .availabilityCard {
         padding: 2rem;
         margin: 2.5rem 0;
@@ -162,10 +148,6 @@
 }
 
 @media screen and (max-width: 1550px) {
-    .availability {
-        max-width: 900px;
-    }
-
     .availabilityCard h2 {
         font-size: 22px;
     }
@@ -202,10 +184,6 @@
 
 
 @media screen and (max-width: 1150px) {
-    .availability {
-        max-width: 780px;
-    }
-
     .availabilityCard h2 {
         font-size: 20px;
     }
@@ -241,10 +219,6 @@
 }
 
 @media screen and (max-width: 850px) {
-    .availability {
-        max-width: 90vw;
-    }
-
     .availabilityCard {
         flex-wrap: wrap;
     }

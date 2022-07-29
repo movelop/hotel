@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { TbCurrencyNaira } from 'react-icons/tb';
 
 
@@ -9,12 +9,14 @@ import './SingleRoom.css';
 const SingleRoom = () => {
   const location = useLocation();
   const { data } = location.state;
+  const navigate = useNavigate();
+
   return (
     <div>
 	    <HeadingSmall text={data?.title} img={data?.images[0]} type ='room' />
       <div className="singleRoom">
         <div className="singleRoomContainer">
-          <button className="bookNow" onClick={() => {}}>Reserve or Book Now!</button>
+          <button className="bookNow" onClick={() => navigate('/booking')}>Reserve or Book Now!</button>
           <h1 className="singleRoomTitle">{data.title}</h1>
           <p className="singleRoomHighlight">
               Book a stay over <span><TbCurrencyNaira className='currency' /></span> {data.price} at this property and get access to

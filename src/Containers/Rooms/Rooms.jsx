@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Heading, Header, Testimonials, Footer } from '../../Components';
+import { Heading, Header, Testimonials, Footer, Loading } from '../../Components';
 import { images } from '../../Data/dummy';
 import './Rooms.css';
 import useFetch from '../../hooks/useFetch';
@@ -12,17 +12,20 @@ const desc = 'Each of our bright, light-flooded rooms come with everything you c
 
 
 const Rooms = () => {
-  const { data } = useFetch('/api/rooms')
+  const { data, loading } = useFetch('/api/rooms')
   return (
     <div>
-        <Heading img={images.homeImage} />
+        <Heading img={images.room} />
         <Header name={name} desc={desc} />
         <div className='rooms'>
           <div className="roomsContainer">
-            {data.map((item) => (
-              <RoomDetails key={item._id} item={item}  />
-            ))}
-            
+            {loading ? (<Loading />) : (
+              <>
+                {data.map((item) => (
+                  <RoomDetails key={item._id} item={item}  />
+                ))}
+              </>
+            )} 
           </div>
         </div>
         <Testimonials />
