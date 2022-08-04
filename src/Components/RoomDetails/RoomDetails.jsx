@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { TbCurrencyNaira } from 'react-icons/tb';
 
 const RoomDetail = ({ item }) => {
-    const [index, setIndex] = useState(0);
     const {_id, title, price, images, desc } = item;
   
     return(
