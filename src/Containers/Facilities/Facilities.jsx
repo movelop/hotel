@@ -21,7 +21,7 @@ const Facility = ({ item }) => (
 )
 
 const Facilities = () => {
-  const { data, loading } = useFetch('/api/facilities')
+  const { data, loading } = useFetch('https://heritage-resorts.herokuapp.com/api/facilities')
   return (
     <div>
         <Heading img = {images.facilitiesImg} />

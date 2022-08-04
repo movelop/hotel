@@ -12,7 +12,7 @@ const desc = 'Each of our bright, light-flooded rooms come with everything you c
 
 
 const Rooms = () => {
-  const { data, loading } = useFetch('/api/rooms')
+  const { data, loading } = useFetch('https://heritage-resorts.herokuapp.com/api/rooms')
   return (
     <div>
         <Heading img={images.room} />

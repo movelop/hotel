@@ -35,7 +35,7 @@ const Existing = () => {
       await Promise.all(
           selectedRooms.map((roomId) => {
             console.log(roomId);
-            const res = axios.put(`/api/rooms/reservation/${roomId}`, {
+            const res = axios.put(`https://heritage-resorts.herokuapp.com/api/rooms/reservation/${roomId}`, {
               dates: alldates,
             });
             return res.data;

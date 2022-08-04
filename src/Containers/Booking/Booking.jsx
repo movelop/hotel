@@ -13,7 +13,7 @@ const Booking = () => {
     email: '',
   });
   const [error, setError] = useState('');
-  const { data, loading } = useFetch('/api/rooms');
+  const { data, loading } = useFetch('https://heritage-resorts.herokuapp.com/api/rooms');
   const navigate = useNavigate();
 
   const handleChange = (e) => {
