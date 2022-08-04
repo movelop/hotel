@@ -8,6 +8,8 @@ import './Checkout.css';
 import { images } from '../../../Data/dummy';
 import { Footer, HeadingSmall, Testimonials } from '../../../Components';
 
+const publicKey = process.env.REACT_APP_PAYSTACK_PUBLIC
+
 const Checkout = () => {
     const [pay, setPay] = useState(false);
     const [error, setError] = useState(false);
@@ -112,7 +114,7 @@ const Checkout = () => {
             selectedRooms: selectedRooms,
             roomNumbers: selectedRoomNumbers,
             price: totalPrice,
-            paymentReferenc: reference,
+            paymentReference: reference,
         }
 
         try {
@@ -146,7 +148,7 @@ const Checkout = () => {
           name: `${formData.firstname} ${formData.lastname}`,
           phone: formData.phone,
         },
-        publicKey: process.env.REACT_PAYSTACK_PUBLIC_KEY,
+        publicKey: publicKey,
         text: "Pay Now",
         onSuccess: (reference) =>{
           handleSuccess(reference.reference);
@@ -154,7 +156,6 @@ const Checkout = () => {
         onClose: () => alert("Wait! Don't leave :("),
       }
 
-    
   return (
     <div>
         <HeadingSmall text='Finish Your Reservation' img={images.checkout} />
@@ -285,7 +286,7 @@ const Checkout = () => {
                         </div>
                     </form>
                     <div className="guestFormButton">
-                            {pay ? <PaystackButton {...componentProps} /> : <button onClick={handleSubmit}>Continue to Pay</button>}
+                            {pay ? <PaystackButton {...componentProps} className='pay' /> : <button onClick={handleSubmit}>Continue to Pay</button>}
                     </div>
                 </div>
             </div>

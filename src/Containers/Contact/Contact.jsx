@@ -42,11 +42,13 @@ const Contact = () => {
                   </div>
                   <div className="formInput">
                     <label >Message</label>
-                    <textarea rows={10} />
+                    <textarea />
                   </div>
+                  <div className="contactButton">
                     <button type="submit">
                       Submit
                     </button>
+                  </div>
                 </form>
               </div>
             </div>
