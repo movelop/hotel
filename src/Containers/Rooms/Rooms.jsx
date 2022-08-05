@@ -19,7 +19,7 @@ const Rooms = () => {
         <Header name={name} desc={desc} />
         <div className='rooms'>
           <div className="roomsContainer">
-            {loading ? (<Loading />) : (
+            {loading ? (<Loading text={'Loading ...'} />) : (
               <>
                 {data.map((item) => (
                   <RoomDetails key={item._id} item={item}  />

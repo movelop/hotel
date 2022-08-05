@@ -254,6 +254,10 @@
         text-align: right;
     }
 
+    .availabilityCardPrice > div > h4 {
+        justify-content: flex-start;
+    }
+
     .availabilityCardPrice > button {
         width: 100%;
     }

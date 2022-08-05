@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Loading.css';
 
-const Loading = () => {
+const Loading = ({ text }) => {
   return (
     <div className="loader">
         <div className="ldsRoller">
@@ -15,7 +15,7 @@ const Loading = () => {
             <div></div>
             <div></div>
         </div>
-          <h2>Loading...</h2>
+          <h2>{text}</h2>
     </div>
   )
 }

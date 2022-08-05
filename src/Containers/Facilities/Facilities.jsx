@@ -28,7 +28,7 @@ const Facilities = () => {
         <Header name='FACILITIES'  desc = { desc } />
         <div className="facilities">
           <div className="facilitiesContainer">
-            {loading ? (<Loading />) : (
+            {loading ? (<Loading text={'Loading ...'} />) : (
               <>
                 {data.map((item) => (
                   <Facility key={item._id} item={item} />
