@@ -29,7 +29,7 @@ const Booking = () => {
       return setError("Only Fill out ONE of these fields.");
     }
     try {
-      const res = await axios.post('/api/bookings', formData);
+      const res = await axios.post('https://heritage-resorts.herokuapp.com/api/bookings', formData);
       navigate('/booking/existing', { state: { data: res.data }});
     } catch (error) {
       navigate('/booking/existing', { state: { error: error.response.data }});
