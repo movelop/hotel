@@ -167,6 +167,10 @@
     cursor: pointer;
 }
 
+.pay {
+    background-color: #14274A;
+}
+
 
 @media screen and (min-width: 2000px) {
     .checkoutContainer {
@@ -352,7 +356,7 @@
 
     .guestFormButton > button {
         font-size: 14px;
-        width: 120px;
+        width: 150px;
     }
 }
 
@@ -378,8 +382,7 @@
     }
 
     .guestFormButton > button {
-        width: 110px;
-        font-size: 12px;
+        width: 130px;
     }
 }
 
