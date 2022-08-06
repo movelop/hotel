@@ -123,9 +123,8 @@ const Checkout = () => {
             price: totalPrice,
             paymentReference: reference,
         }
-
+        setLoading(true);
         try {
-            setLoading(true);
             const verifyRes = await axios.get(`https://heritage-resorts.herokuapp.com/api/bookings/verify-payment/${reference}`);
 
             if (verifyRes.data.data.status === 'success') {
