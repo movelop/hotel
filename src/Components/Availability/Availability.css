@@ -258,6 +258,10 @@
         justify-content: flex-start;
     }
 
+    .availabilityCardPrice > div >.last {
+        justify-content: flex-end;
+    }
+
     .availabilityCardPrice > button {
         width: 100%;
     }

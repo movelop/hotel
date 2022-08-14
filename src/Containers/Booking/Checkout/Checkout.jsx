@@ -151,22 +151,21 @@ const Checkout = () => {
         } 
     }
 
-      const componentProps = {
+    const componentProps = {
         email: formData.email,
         amount: totalPrice * 100,
         metadata: {
-          name: `${formData.firstname} ${formData.lastname}`,
-          phone: formData.phone,
+            name: `${formData.firstname} ${formData.lastname}`,
+            phone: formData.phone,
         },
         publicKey: publicKey,
         text: "Pay Now",
         onSuccess: (reference) =>{
-          handleSuccess(reference.reference);
+            handleSuccess(reference.reference);
         },   
         onClose: () => alert("Wait! Don't leave :("),
-      }
+    }
 
-      loading && (<Loading text={'Please wait ...'} />)
 
   return (
     <div>

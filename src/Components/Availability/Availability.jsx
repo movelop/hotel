@@ -12,10 +12,10 @@ const Availability = ({ room }) => {
 
     const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
     const dayDifference = (date1, date2) => {
-    const timeDiff = Math.abs(new Date(date2).getTime() - new Date(date1).getTime());
-    const daydiff = Math.ceil(timeDiff / MILLISECONDS_PER_DAY);
-    return daydiff;
-  }
+        const timeDiff = Math.abs(new Date(date2).getTime() - new Date(date1).getTime());
+        const daydiff = Math.ceil(timeDiff / MILLISECONDS_PER_DAY);
+        return daydiff;
+    }
 
   const days = dayDifference(dates[0].endDate, dates[0].startDate);
   const totalPrice = days* options.rooms * room.price
@@ -59,7 +59,7 @@ const Availability = ({ room }) => {
                     </div>
                     <div>
                         <label>Total ({`${days} Night(s) for ${options.rooms} room(s)`})</label>
-                        <h4><span><TbCurrencyNaira /></span>{totalPrice.toLocaleString("en-US")}</h4>
+                        <h4 className='last'><span><TbCurrencyNaira /></span>{totalPrice.toLocaleString("en-US")}</h4>
                     </div>
                     <button
                         className="availabilityButton"

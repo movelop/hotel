@@ -210,6 +210,12 @@
     .headingButton {
         font-size: 8px;
     }
+
+    .date {
+        transform: scale(0.8);
+        top: 5px;
+        left: 0%;
+    }
 }
 
 @media screen and (max-width:385px) {

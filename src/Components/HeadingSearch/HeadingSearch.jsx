@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { BsFillCalendar2EventFill, BsFillPersonFill } from 'react-icons/bs';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { DateRange } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; 
 import 'react-date-range/dist/theme/default.css';
@@ -16,6 +16,7 @@ const HeadingSearch = () => {
     const [opensearchOptions, setOpensearchOptions] = useState(false);
     const [searchOptions, setSearchOptions] = useState(options);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handlesearchOptions = (name, operation) => {
         setSearchOptions((prev) => {
@@ -27,8 +28,11 @@ const HeadingSearch = () => {
     }
 
     const handleSearch = () => {
+        if(location.pathname !== '/booking') {
+            navigate('/booking');
+        }
         search( searchDates, searchOptions);
-        navigate('/booking', { state: { searchDates, searchOptions } });
+        
     }
     
     return (

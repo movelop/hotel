@@ -41,7 +41,7 @@ const Existing = () => {
             return res.data;
           })
       );
-      await axios.delete(`/api/bookings/${_id}`);
+      await axios.delete(`https://heritage-resorts.herokuapp.com/api/bookings/${_id}`);
       navigate('/');
   } catch (error) {
       console.log(error);
