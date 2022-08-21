@@ -195,6 +195,7 @@
 
 }
 @media screen and (max-width: 850px ){
+    .complementry
     .complementry h2 {
         font-size: 24px;
     }
@@ -241,6 +242,7 @@
     .complementry h2 {
         font-size: 12px;
         font-weight: 500;
+        width: 90%;
     }
 
     .explore {
