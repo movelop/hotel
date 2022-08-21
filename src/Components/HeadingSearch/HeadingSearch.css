@@ -218,10 +218,11 @@
     }
 }
 
-@media screen and (max-width:385px) {
+@media screen and (max-width:320px) {
     .date {
-        left: 10px;
-        max-width: 250px;
+        transform: scale(0.6);
+        top: -30px;
+        left: -20%;
     }
 
     .optionItem {
