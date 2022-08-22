@@ -254,6 +254,10 @@
         text-align: right;
     }
 
+    .availabilityCardPrice > div > label {
+        font-size: 12px;
+    }
+
     .availabilityCardPrice > div > h4 {
         justify-content: flex-start;
     }
