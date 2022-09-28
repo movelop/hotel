@@ -19,18 +19,17 @@
 }
 
 .contactTop h3 {
-    font-family: 'EB Garamond', serif;
+    font-family: var(--font-heading);
     font-weight: 700;
     font-size: 28px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .contactTop p {
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .contactBottom {
@@ -45,11 +44,10 @@
 }
 
 .contactAddress h2 {  
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    color: #14274A;
+    color: var(--primary-color);
 
 }
 
@@ -60,24 +58,22 @@
 }
 
 .text {
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .arrow {
     font-size: 28px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .contactInfo p {
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .contactSub {
@@ -87,11 +83,10 @@
 }
 
 .contactSub h2 {
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    color: #14274A;
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
@@ -114,7 +109,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .formInput > input {
@@ -122,12 +117,11 @@
     font-size: 16px;
     border:  2px solid rgba(20, 39, 74, 0.5);
     padding: 6px 10px;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    color: #14274A;
+    color: var(--primary-color);
     outline: none;
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 .formInput > textarea {
@@ -137,12 +131,11 @@
     font-size: 16px;
     border:  2px solid rgba(20, 39, 74, 0.5);
     padding: 6px 10px;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    color: #14274A;
+    color: var(--primary-color);
     outline: none;
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 .formInput > input:focus,
@@ -158,15 +151,14 @@
 }
 
 .contactButton button {
-    background-color: #E0B973;
-    font-family: 'Montserrat';
+    background-color: var(--gold-color);
     font-style: normal;
     font-weight: 500;
     border: none;
     padding: 0.5em 1em;
     font-size: 16px;
     cursor: pointer;
-    color: #FFFFFF;
+    color: var(--white-color);
 
 }
 

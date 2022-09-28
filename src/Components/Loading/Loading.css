@@ -1,7 +1,7 @@
 .loader {
     margin: auto;
     text-align: center;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .ldsRoller {
@@ -23,7 +23,7 @@
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #14274A;
+    background: var(--primary-color);
     margin: -4px 0 0 -4px;
 }
 

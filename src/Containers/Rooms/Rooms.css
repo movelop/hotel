@@ -18,7 +18,7 @@
 .room {
     margin-bottom: 3rem;
     width: 45%;
-    border: 2px solid #14274A;
+    border: 2px solid var(--primary-color);
     border-radius: 5px 5px 15px 15px;
     overflow: hidden;
 }
@@ -39,7 +39,7 @@
 }
 
 .imageactive {
-    background: #FFFFFF;
+    background: var(--white-color);
 }
 
 .roomName {
@@ -48,15 +48,14 @@
     justify-content: center;
     align-items: center;
     padding: 0.75rem 0;
-    background: #14274A;
+    background: var(--primary-color);
 }
 
 .roomName h2 {
-    font-family: 'Montserrat', serif;
     font-weight: 700;
     font-size: 32px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .roomSummary {
@@ -67,11 +66,10 @@
 }
 
 .roomSummaryText p {
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    color: #14274A;
+    color: var(--primary-color);
     text-align: start;
     overflow: hidden;
     display: -webkit-box;
@@ -91,7 +89,7 @@
     gap: 0.1em;
     font-weight: bolder;
     font-size: 24px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .roomPrice span {
@@ -101,11 +99,10 @@
 .actionButton button {
     padding: 0.5em 1em;
     font-size: 18px;
-    font-family: 'Montserrat', serif;
     border: none;
     outline: none;
-    background-color: #E0B973;
-    color: white;
+    background-color: var(--gold-color);
+    color: var(--white-color);
     border-radius: 0.25em;
     cursor: pointer;
 }

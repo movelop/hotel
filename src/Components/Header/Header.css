@@ -15,21 +15,20 @@
 }
 
 .headerContainer h3 {
-    font-family: 'EB Garamond', serif;
+    font-family: var(--font-heading);
     font-weight: 700;
     font-size: 32px;
     text-align: center;
     letter-spacing: 0.05em;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .headerContainer p {
-    font-family: 'Montserrat', serif;
     margin-top: 1.5rem;
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 @media screen and (min-width: 2000px) {

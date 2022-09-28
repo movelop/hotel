@@ -15,7 +15,7 @@
 
 .checkoutContainer > h1 {
     font-size: 28px;
-    color: #14274A;
+    color: var(--primary-color);
     margin-bottom: 2rem;
 }
 
@@ -60,7 +60,7 @@
 
 .guestDetails > h1 {
     font-size: 18px;
-    color: #14274A;
+    color: var(--primary-color);
     text-transform: uppercase;
 }
 
@@ -85,7 +85,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .guestFormInput > label {
@@ -94,13 +94,13 @@
 }
 
 .guestFormInput > input {
-    border:  1px solid #14274A;
+    border:  1px solid var(--primary-color);
     font-size: 16px;
     padding: 8px;
 }
 
 .guestFormInput > input:focus {
-    border:  2px solid #14274A;
+    border:  2px solid var(--primary-color);
 }
 
 .guestFormInput > .checkbox {
@@ -111,7 +111,7 @@
 .selectRoomContainer {
     width: 45%;
     margin-top: 1rem;
-    color: #14274A;
+    color: var(--primary-color);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -139,7 +139,7 @@
 .optionsBoxes > .checkbox {
     width: 25px;
     height: 25px;
-    border-color: #14274A;
+    border-color: var(--primary-color);
 }
 
 .optionsBoxes > label {
@@ -159,16 +159,16 @@
     width: 200px;
     padding: 10px;
     font-size: 16px;
-    background-color: #E0B973;
+    background-color: var(--gold-color);
     border: none;
     outline: none;
-    color: #FFFFFF;
+    color: var(--white-color);
     border-radius: 2px;
     cursor: pointer;
 }
 
 .pay {
-    background-color: #14274A;
+    background-color: var(--primary-color);
 }
 
 

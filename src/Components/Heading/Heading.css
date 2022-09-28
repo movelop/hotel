@@ -37,38 +37,36 @@
 }
 
 .headingTexts h6 {
-    font-family: 'Montserrat', serif;
     font-weight: 400;
     font-size: 28px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .headingTexts h2 {
-    font-family: 'EB Garamond', serif;
+    font-family: var(--font-heading);
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
     letter-spacing: 0.07em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .headingTexts h4 {
-    font-family: 'EB Garamond', serif;
+    font-family: var(--font-heading);
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     letter-spacing: 0.4em;
-    color: #FFFFFF;
+    color: var(--white-color);
     margin-bottom: 0.75rem;
 }
 
 .headingTexts p {
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .headerSearch {

@@ -24,7 +24,7 @@
     margin: 2rem auto 0 auto;
     padding: 2rem;
     background-color: #c3d6f8;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .foundInfo {
@@ -68,13 +68,13 @@
 
 .notExisting h1 {
     font-size: 32px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .notExistingButton {
     border: none;
-    background-color: #E0B973;
-    color: #ffffff;
+    background-color: var(--gold-color);
+    color: var(--white-color);
     padding: 1em 2em;
     cursor: pointer;
     font-size: 16px;

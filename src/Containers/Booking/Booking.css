@@ -17,7 +17,7 @@
 
 .checkReservation h1 {
     font-size: 24px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .checkReservationForm {
@@ -29,12 +29,12 @@
     width: 300px;
     padding: 10px;
     margin-right: 10px;
-    border:  1px solid #E0B973;
+    border:  1px solid var(--gold-color);
     font-size: 16px;
 }
 
 .checkReservationForm input:focus {
-    border: 1px solid #E0B973;
+    border: 1px solid var(--gold-color);
 }
 
 .bookingButton {
@@ -42,8 +42,8 @@
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    background-color: #14274A;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     border: none;
     padding: 10px 15px;
     width: 100px;
@@ -60,10 +60,10 @@
 }
 
 .bookingHeader > h1 {
-    font-family: 'EB Garamond', serif;
+    font-family: var(--font-heading);
     font-weight: 700;
     font-size: 38px;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 .bookingSearch {
@@ -80,7 +80,7 @@
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    color: #14274A;
+    color: var(--primary-color);
 }
 
 @media screen and (min-width: 2000px) {
@@ -102,7 +102,7 @@
         width: 550px;
         font-size: 24px;
         padding: 20px;
-        border: 2px solid #E0B973;
+        border: 2px solid var(--gold-color);
     }
 
     .bookingButton {

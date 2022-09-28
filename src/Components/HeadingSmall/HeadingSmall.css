@@ -28,11 +28,11 @@
 }
 
 .smallText h3 {
-    font-family: 'EB Garamond', serif;
+    font-family: var(--font-heading);
     font-style: normal;
     font-weight: bolder;
     font-size: 48px;
-    color: #FFFFFF;
+    color: var(--white-color);
 
 }
 

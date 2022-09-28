@@ -5,10 +5,9 @@
 }
 
 .complementry h2 {
-    font-family: 'Montserrat', serif;
     font-weight: 400;
     font-size: 24px;
-    color: #14274A;
+    color: var(--primary-color);
     text-align: center;
 }
 
@@ -42,35 +41,33 @@
 }
 
 .line {
-    border: 2px solid #14274A;
+    border: 2px solid var(--primary-color);
     margin-right: 1rem;
     height: 100px;
 }
 
 .exploreTexts h3 {
-    font-family: 'EB Garamond', serif;
+    font-family: var(--font-heading);
     font-weight: 700;
     font-size: 38px;
     letter-spacing: 0.02em;
-    color: #14274A;
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 .exploreTexts p {
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    color: #14274A;
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 .exploreButton {
-    font-family: 'Montserrat', serif;
-    background-color: #E0B973;
+    background-color: var(--gold-color);
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.05em;
-    color: #FFFFFF;
+    color: var(--white-color);
     border: none;
     padding: 0.5em 1em;
     border-radius: 5px;

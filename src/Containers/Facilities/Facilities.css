@@ -39,7 +39,7 @@
     position: absolute;
     bottom: 0;
     left: 25%;
-    background: #FFFFFF;
+    background: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,12 +48,11 @@
 }
 
 .facilityName h4 {
-    font-family: 'Montserrat', serif;
     text-transform: uppercase;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    color: #14274A;
+    color: var(--primary-color);
 
 }
 

@@ -25,7 +25,7 @@
 .logo {
     width: 172px;
     height: 100%;
-    background-color: #E0B973;
+    background-color: var(--gold-color);
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
     display: flex;
@@ -42,20 +42,20 @@
 }
 
 .logoText h1 {
-    font-family: 'EB Garamond', serif;
+    font-family: var(--font-heading);
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.10em;
-    color: #14274A;
+    color: var(--primary-color);
     text-transform: uppercase;
 }
 
 .logoText h3 {
-    font-family: 'EB Garamond', serif;
+    font-family: var(--font-heading);
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 0.4em;
-    color: #14274A;
+    color: var(--primary-color);
     text-transform: uppercase;
 }
 
@@ -66,11 +66,10 @@
 }
 
 .navLink span {
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .capitalize {
@@ -88,7 +87,7 @@
     align-items: flex-end;
     flex-direction: column;
     text-align: end;
-    background: #E0B973;
+    background: var(--gold-color);
     padding: 2rem;
     position: absolute;
     top: 15px;
@@ -101,7 +100,7 @@
 
 .navbarCancel {
     font-size: 27px;
-    color: #14274A;
+    color: var(--primary-color);
     cursor: pointer;
     position: absolute;
     top: 20px;
@@ -117,10 +116,10 @@
 }
 
 .navLinkSmall span {
-    font-family: 'EB Garamond', serif;
+    font-family: var(--font-heading);
     margin: 2rem 0;
     cursor: pointer;
-    color: #14274A;
+    color: var(--primary-color);
     font-weight: 900;
     font-size: 1rem;
     text-align: center;
