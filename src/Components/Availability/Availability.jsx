@@ -33,7 +33,7 @@ const Availability = ({ room }) => {
         const alldates = getDatesInRange(dates[0].startDate, dates[0].endDate);
         const isAvailable = () => {
             room?.roomNumbers.forEach((item) => {
-                const isFound = item.unavailableDates.some((date) => alldates.includes(new Date(date).getTime))
+                const isFound = item.unavailableDates.some((date) => alldates.includes(new Date(date).getTime()))
                 const update = () => {
                     const roomFound = a.includes(item)
 
