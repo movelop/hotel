@@ -1,4 +1,4 @@
-import React, { useContext} from 'react';
+import React, { useContext, useEffect, useState} from 'react';
 import { HiLocationMarker } from 'react-icons/hi';
 import { TbCurrencyNaira } from 'react-icons/tb';
 import { useNavigate } from 'react-router-dom';
@@ -7,8 +7,51 @@ import './Availability.css';
 import { SearchContext } from '../../contexts/SearchContext';
 
 const Availability = ({ room }) => {
+    const [availableRooms, setAvailableRooms] = useState([])
     const { dates, options } = useContext(SearchContext);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        let a = [];
+        const getDatesInRange = (startDate, endDate) => {
+            const start = new Date(startDate);
+            const end = new Date(endDate);
+        
+            const date = new Date(start.getTime());
+        
+            const dates = [];
+        
+            while (date <= end) {
+              dates.push(new Date(date).getTime());
+              date.setDate(date.getDate() + 1);
+            }
+        
+            return dates;
+        };
+    
+        
+        const alldates = getDatesInRange(dates[0].startDate, dates[0].endDate);
+        const isAvailable = () => {
+            room?.roomNumbers.forEach((item) => {
+                const isFound = item.unavailableDates.some((date) => alldates.includes(new Date(date).getTime))
+                const update = () => {
+                    const roomFound = a.includes(item)
+
+                    if (roomFound) {
+                        return a
+                    } else {
+                        a = [...a, item]
+                    }
+                }
+
+                if(!isFound) {
+                    update();
+                }
+                return setAvailableRooms(a);
+            })
+        }
+      isAvailable()
+    }, [room, dates])
 
     const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
     const dayDifference = (date1, date2) => {
@@ -50,6 +93,10 @@ const Availability = ({ room }) => {
                             <label>Bedding:</label>
                             <p>{room.bedding}</p>
                         </div>
+                        <div>
+                            <label>Room(s) Available:</label>
+                            <p>{availableRooms.length}</p>
+                        </div>
                     </div>
                 </div>
                 <div className="availabilityCardPrice">
@@ -61,12 +108,21 @@ const Availability = ({ room }) => {
                         <label>Total ({`${days} Night(s) for ${options.rooms} room(s)`})</label>
                         <h4 className='last'><span><TbCurrencyNaira /></span>{totalPrice.toLocaleString("en-US")}</h4>
                     </div>
-                    <button
-                        className="availabilityButton"
-                        onClick={() => handleBooking(room)}
-                    >
-                        Book
-                    </button>
+                    {availableRooms.length > 0 ? (
+                        <button
+                            className="availabilityButton"
+                            onClick={() => handleBooking(room)}
+                        >
+                            Book
+                        </button>
+                    ): (
+                        <button
+                            className="availabilityButton"
+                            style={{ color: "white", backgroundColor: "#14274A" }}
+                        >
+                            Unavailable
+                        </button>
+                    )}
                 </div>
             </div>
         </div>
