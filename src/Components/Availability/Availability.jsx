@@ -34,18 +34,18 @@ const Availability = ({ room }) => {
         const isAvailable = () => {
             room?.roomNumbers.forEach((item) => {
                 const isFound = item.unavailableDates.some((date) => alldates.includes(new Date(date).getTime()))
-                const update = () => {
-                    const roomFound = a.includes(item)
+                const update = (obj) => {
+                    const roomFound = a.includes(obj)
 
                     if (roomFound) {
                         return a
                     } else {
-                        a = [...a, item]
+                        a = [...a, obj]
                     }
                 }
 
                 if(!isFound) {
-                    update();
+                    update(item);
                 }
                 return setAvailableRooms(a);
             })
